@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src='{{ asset('image/logo.jpg')}}' height="80"  /></a>
+                    <a class="navbar-brand" href="{{action('RegisterController@index')}}"><img src='{{ asset('image/logo.jpg')}}' height="80"  /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,10 +53,10 @@
                             <a href="{{action('RegisterController@index')}}">Home</a>
                         </li>
                         <li>
-                            <a href="services.html">About</a>
+                            <a href="">About</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="{{action('RegisterController@contact')}}">Contact</a>
                         </li>
                          <?php if(Session::get('key')):?>
                         <li>

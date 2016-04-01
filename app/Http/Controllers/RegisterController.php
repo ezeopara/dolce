@@ -132,5 +132,9 @@ class RegisterController extends Controller {
         Session::forget('key');
         return redirect('/');
     }
+    public function contact(){
+        $title = 'Contact Page';
+        return view('user.contact',  compact('title'));
+    }
 
 }

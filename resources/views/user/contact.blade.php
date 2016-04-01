@@ -86,13 +86,13 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Register
+                <h1 class="page-header">Contact
                     <small></small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
                     </li>
-                    <li class="active">Register</li>
+                    <li class="active">Contact</li>
                 </ol>
             </div>
         </div>
@@ -103,39 +103,21 @@
         <!-- /.row -->
 
         <!-- Team Members -->
-        <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-                <div class="panel panel-default">
-            <div class="panel-heading">Enter reference number</div>
-            <div class="panel-body">
-               @include('include.message')
-               @include('errors.error')
-                {!! Form::open(['action'=>'ErcasController@index', 'role'=>'form'])!!}
-<!--RegisterController@login-->
-                <div class="col-sm-10 col-sm-offset-1">
-                    <div class="form-group">
-                        <label class="control-label col-sm-3" for="email">User ID:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" name='transaction_id' id="role" placeholder="Enter reference number">
-                        </div>
-                    </div>
-
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-9">
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                {!! Form::close()!!}
-            </div>
-        </div>
-
+	<div class="row-fluid">
+        <div class="col-md-8">
+        	<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+    	</div>
+    	
+      	<div class="col-md-4">
+    		<h2>Dolce Entertainment</h2>
+    		<address>
+                    <p><small>Organizers of Most Beautiful Girl in Abuja</small></p>
+                        <p><strong>Website:</strong> www.mbgaevents.com </p>
+                        <p><strong>Website2:</strong> www.mbgabeautypageant.com</p> 
+                        <p><strong>Phone:</strong> 08034523698, 08051774413, 08033244421</p> 
+    		</address>
+    	</div>
     </div>
-</div>
         <!-- /.row -->
 
         <!-- Our Customers -->

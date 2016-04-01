@@ -16,6 +16,7 @@ Route::get('register','RegisterController@show');
 Route::post('register','RegisterController@login');
 Route::get('register/user','RegisterController@create');
 Route::post('register/user','RegisterController@store');
+Route::get('register/contact','RegisterController@contact');
 Route::get('register/logout', 'RegisterController@logout');
 
 //Backend route
