@@ -14,6 +14,10 @@
 
         @if($user)
         <div class="row">
+            <div class="col-md-3">Transact Id:</div>
+            <div class="col-md-9">{{$user->transaction_id}}</div>
+        </div>
+        <div class="row">
             <div class="col-md-3">Surname:</div>
             <div class="col-md-9">{{$user->surname}}</div>
         </div>

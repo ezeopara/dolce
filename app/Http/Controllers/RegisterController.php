@@ -52,16 +52,16 @@ class RegisterController extends Controller {
 
             if ($register->email) {
                 //sending email to the user
-//                Mail::send('email.success', ['user' => $register], function ($m) use ($register) {
-//                    $m->from('oparannabueze@gmail.com', 'Dolce Registration');
-//                    $m->to($register->email, $register->first_name)->subject('Registration Successful!');
-//                });
+                Mail::send('email.success', ['user' => $register], function ($m) use ($register) {
+                    $m->from('oparannabueze@gmail.com', 'Dolce Registration');
+                    $m->to($register->email, $register->first_name)->subject('Registration Successful!');
+                });
 
-                Session::flash('message', 'You have sucefully Registered');
-                return redirect('register/create');
+                Session::flash('message', 'You have successfully Registered');
+                return redirect('register/user');
             } else {
                 Session::flash('message', 'Oops!! Registration Failed');
-                return redirect('register/create');
+                return redirect('register/user');
             }
         } else {
             return redirect('/');
