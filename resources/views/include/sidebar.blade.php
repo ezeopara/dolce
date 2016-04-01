@@ -43,6 +43,7 @@
              <li class="treeview">
               <a href="#"><i class="fa fa-link"></i> <span>Create Admin</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
+                <li><a href="{{action('UserController@create')}}">Add Admin Users</a></li>
                 <li><a href="">List Admin Users</a></li>
                 <li><a href="">Role</a></li>
               </ul>

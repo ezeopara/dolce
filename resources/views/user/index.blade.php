@@ -31,7 +31,7 @@
 
     </head>
 
-    <body class="body-colour">
+    <body class="body-colour" style="background-image:url('{{ asset('image/bg4.jpg')}}');">
         
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src='{{ asset('image/logo.png')}}' height="80" width="120" /></a>
+                    <a class="navbar-brand" href="index.html"><img src='{{ asset('image/logo.jpg')}}' height="80"  /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -92,26 +92,26 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner height-line">
                 <div class="item active">
-                    <div class="fill" style="background-image:url('{{ asset('image/slide3.png')}}');">                     
+                    <div class="fill" style="background-image:url('{{ asset('image/DSC_2100.jpg')}}');">                     
                     </div>
                     <div class="carousel-caption">
                         <h2>Caption 1</h2>
                     </div>
                 </div>
                 <div class="item">
-                    <div class="fill" style="background-image:url('{{ asset('image/slide1.png')}}');"></div>
+                    <div class="fill" style="background-image:url('{{ asset('image/DSC_1223.jpg')}}');"></div>
                     <div class="carousel-caption">
                         <h2>Caption 2</h2>
                     </div>
                 </div>
                 <div class="item">
-                    <div class="fill" style="background-image:url('{{ asset('image/slide4.png')}}');"></div>
+                    <div class="fill" style="background-image:url('{{ asset('image/DSC_0214.jpg')}}');"></div>
                     <div class="carousel-caption">
                         <h2>Caption 2</h2>
                     </div>
                 </div>
                 <div class="item">
-                    <div class="fill" style="background-image:url('{{ asset('image/topimage.png')}}');"></div>
+                    <div class="fill" style="background-image:url('{{ asset('image/DSC_0142.jpg')}}');"></div>
                     <div class="carousel-caption">
                         <h2>Caption 3</h2>
                     </div>
@@ -180,32 +180,47 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.jpg')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0198.jpg')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0326.jpg')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0346.jpg')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1204.jpg')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1210.jpg')}}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1298.jpg')}}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1706.jpg')}}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.jpg')}}" alt="">
                     </a>
                 </div>
             </div>
@@ -230,7 +245,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                    <img class="img-responsive" src="{{ asset('image/DSC_1722.jpg')}}" alt="">
                 </div>
             </div>
             <!-- /.row -->
@@ -255,7 +270,7 @@
             <footer>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p>Copyright &copy; Your Website 2014</p>
+                        <p>Copyright &copy; Dolce Entertainment 2016</p>
                     </div>
                 </div>
             </footer>
@@ -274,6 +289,8 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    
+    
         </script>
 
     </body>

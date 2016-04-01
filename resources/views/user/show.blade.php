@@ -31,7 +31,7 @@
 
     </head>
 
-    <body class="body-colour">
+    <body class="body-colour" style="background-image:url('{{ asset('image/bg4.jpg')}}');">
         
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src='{{ asset('image/logo.png')}}' height="80" width="120" /></a>
+                    <a class="navbar-brand" href="index.html"><img src='{{ asset('image/logo.jpg')}}' height="80"  /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -109,8 +109,8 @@
             <div class="panel-heading">Enter reference number</div>
             <div class="panel-body">
                @include('include.message')
-                {!! Form::open(['action'=>'RegisterController@login', 'role'=>'form'])!!}
-
+                {!! Form::open(['action'=>'ErcasController@index', 'role'=>'form'])!!}
+<!--RegisterController@login-->
                 <div class="col-sm-10 col-sm-offset-1">
                     <div class="form-group">
                         <label class="control-label col-sm-3" for="email">User ID:</label>
@@ -147,7 +147,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Dolce Entertainment 2016</p>
                 </div>
             </div>
         </footer>

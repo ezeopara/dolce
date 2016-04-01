@@ -26,6 +26,7 @@ Route::post('admin','LoginController@store');
 Route::get('/admin/dashboard','AdminController@index');
 Route::get('/admin/logout','AdminController@logout');
 Route::get('admin/users','AdminController@listUsers');
+Route::get('admin/users/{any}','AdminController@show');
 
 
 
@@ -43,3 +44,8 @@ Route::get('admin/users','AdminController@listUsers');
 
 
 
+
+
+Route::resource('$Ercas$s', '$Ercas$Controller');
+
+Route::resource('ercas', 'ErcasController');

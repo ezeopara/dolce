@@ -25,7 +25,11 @@ class AdminController extends Controller {
             return redirect('/admin');
         }
     }
-    
+    public function show($id){
+       $user = Register::findOrFail($id);
+       $title = 'User:'.$user->name;
+       return view('admin.show',compact('title','user'));
+    }
     public function listUsers(){
         if (Auth::check()) {
             $users = Register::all();

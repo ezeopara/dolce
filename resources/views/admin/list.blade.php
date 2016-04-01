@@ -29,7 +29,7 @@
                 <td>{{$user->first_name}}</td>
                 <td>{{$user->state_of_birth}}</td>
                 <td>{{$user->contact_address}}</td>
-                <td><a href="">view</a></td>
+                <td><a href="{{action('AdminController@show',['id'=>$user->id])}}">view</a></td>
             </tr>
             <?php $i++; ?>
             @endforeach

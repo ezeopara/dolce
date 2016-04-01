@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mysql_local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
             'prefix'   => '',
         ],
 
-        'mysql' => [
+        'mysql_local' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
             'database'  => env('DB_DATABASE', 'forge'),
@@ -64,6 +64,18 @@ return [
             'strict'    => false,
         ],
 
+        'mysql_ercas' => [
+            'driver'    => 'mysql',
+            'host'      => env('ERCAS_DB_HOST', 'localhost'),
+            'database'  => env('ERCAS_DB_DATABASE', 'forge'),
+            'username'  => env('ERCAS_DB_USERNAME', 'forge'),
+            'password'  => env('ERCAS_DB_PASSWORD', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
+        
         'pgsql' => [
             'driver'   => 'pgsql',
             'host'     => env('DB_HOST', 'localhost'),

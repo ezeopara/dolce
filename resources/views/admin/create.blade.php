@@ -1,8 +1,17 @@
-@extends('admin')
+@extends('admin/admin_template')
 
 @section('content')
-<div class="container">
-    <div class="row">
+<div class="box box-default">
+    <div class="box-header with-border">
+        <h3 class="box-title">List Registered Users</h3>
+        <div class="box-tools pull-right">
+            <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+        </div><!-- /.box-tools -->
+    </div><!-- /.box-header -->
+    <div class="box-body">
+   
+ <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h1 class="text-center">Create A User</h1>
         </div>
@@ -74,6 +83,10 @@
             {!! Form::close()!!}
         </div>
     </div>
+     
+        </div>
+        <!--- content Ends------->
+    </div><!-- /.box-body -->
+</div><!-- /.box -->
 
-</div>
 @stop
