@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\Http\Requests\ReferenceRequest;
 use App\Http\Requests\CreateErcasRequest;
 use App\Http\Requests\UpdateErcasRequest;
 use App\Repositories\ErcasRepository;
@@ -53,7 +54,7 @@ class ErcasController extends AppBaseController
      *
      * @return Response
      */
-    public function store(CreateErcasRequest $request)
+    public function store(ReferenceRequest $request)
     {
 //        $input = $request->all();
 //
@@ -62,8 +63,8 @@ class ErcasController extends AppBaseController
 //        Flash::success('Ercas saved successfully.');
 //
 //        return redirect(route('ercas.index'));
-        $user = Ercas::where('transaction_id',$request['email'])->first();
-        if ($user['transaction_id'] == $request['email']) {
+        $user = Ercas::where('transaction_id',$request['transaction_id'])->first();
+        if ($user['transaction_id'] == $request['transaction_id']) {
             Session::put('key',$user['transaction_id']);
             return redirect('register/user');
         } else{

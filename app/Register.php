@@ -9,6 +9,7 @@ class Register extends Model
     //
     protected $fillable = [
         'surname',
+        'transaction_id',
         'first_name',
         'date_of_birth',
         'place_of_birth',

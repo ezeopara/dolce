@@ -109,13 +109,14 @@
             <div class="panel-heading">Enter reference number</div>
             <div class="panel-body">
                @include('include.message')
+               @include('errors.error')
                 {!! Form::open(['action'=>'ErcasController@index', 'role'=>'form'])!!}
 <!--RegisterController@login-->
                 <div class="col-sm-10 col-sm-offset-1">
                     <div class="form-group">
                         <label class="control-label col-sm-3" for="email">User ID:</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name='email' id="role" placeholder="Enter reference number">
+                            <input type="text" class="form-control" name='transaction_id' id="role" placeholder="Enter reference number">
                         </div>
                     </div>
 

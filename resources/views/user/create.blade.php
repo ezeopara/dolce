@@ -122,7 +122,7 @@
         </div>
         <div class="form-group">
             {!! Form::label('date of birth','Date of Birth:')!!}
-            {!! Form::text('date_of_birth',null,['class'=>'form-control','id' => 'datepicker','placeholder'=>'Year/Month/Day']) !!}
+            {!! Form::text('date_of_birth',null,['class'=>'form-control','id' => 'datepicker','placeholder'=>'Year-Month-Day']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('place_of_birth','Place of Birth:')!!}

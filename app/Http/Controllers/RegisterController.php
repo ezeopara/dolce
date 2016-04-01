@@ -46,15 +46,16 @@ class RegisterController extends Controller {
      */
     public function store(RegisterRequest $request) {  //make request RegisterRequest
         if (Session::get('key')) {
+            $transaction_id = Session::get('key');
+            $request['transaction_id'] = $transaction_id;
             $register = Register::create($request->all());
 
             if ($register->email) {
-                //send email to use
-                Mail::send('emails.success', ['user' => $register], function ($m) use ($register) {
-                    $m->from('hello@app.com', 'Dolce Registration');
-
-                    $m->to($register->email, $register->first_name)->subject('Registration Successful!');
-                });
+                //sending email to the user
+//                Mail::send('email.success', ['user' => $register], function ($m) use ($register) {
+//                    $m->from('oparannabueze@gmail.com', 'Dolce Registration');
+//                    $m->to($register->email, $register->first_name)->subject('Registration Successful!');
+//                });
 
                 Session::flash('message', 'You have sucefully Registered');
                 return redirect('register/create');

@@ -14,6 +14,7 @@ class CreateRegisterMigration extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('transaction_id');
             $table->string('surname');
             $table->string('first_name');
             $table->date('date_of_birth');

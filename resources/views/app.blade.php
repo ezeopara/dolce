@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{{$title}}</title>
+        <title></title>
 
 
         <!-- Latest compiled and minified CSS -->

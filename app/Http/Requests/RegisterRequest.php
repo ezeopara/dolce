@@ -28,14 +28,14 @@ class RegisterRequest extends Request
             'surname' => 'required|min:3',
             'first_name' => 'required|min:3',
             'date_of_birth'=>'required|date_format:Y-m-d',
-            'state_of_origin'=>'required',
+            'state_of_birth'=>'required',
             'contact_address'=>'required',
             'email'=>'required|email',
-            'contact_phone'=>'required|numeric',
+            'contact_phone'=>'required|digits:11',
             'BBM_pin'=>'min:8|max:8',
             'height'=>'numeric',
             'weight'=>'numeric',
-            'burst'=>'numeriic',
+            'burst'=>'numeric',
             'hip'=>'numeric'
         ];
     }
