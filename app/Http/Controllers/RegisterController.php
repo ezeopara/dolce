@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Mail;
 use Illuminate\Http\Request;
 use Session;
 use App\Register;
@@ -48,6 +49,13 @@ class RegisterController extends Controller {
             $register = Register::create($request->all());
 
             if ($register->email) {
+                //send email to use
+                Mail::send('emails.success', ['user' => $register], function ($m) use ($register) {
+                    $m->from('hello@app.com', 'Dolce Registration');
+
+                    $m->to($register->email, $register->first_name)->subject('Registration Successful!');
+                });
+
                 Session::flash('message', 'You have sucefully Registered');
                 return redirect('register/create');
             } else {

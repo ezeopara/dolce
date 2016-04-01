@@ -62,9 +62,9 @@ class ErcasController extends AppBaseController
 //        Flash::success('Ercas saved successfully.');
 //
 //        return redirect(route('ercas.index'));
-        $user = Ercas::where('username',$request['email'])->first();
-        if ($user['username'] == $request['email']) {
-            Session::put('key',$user['username']);
+        $user = Ercas::where('transaction_id',$request['email'])->first();
+        if ($user['transaction_id'] == $request['email']) {
+            Session::put('key',$user['transaction_id']);
             return redirect('register/user');
         } else{
             Session::flash('message','Invalid User identification');

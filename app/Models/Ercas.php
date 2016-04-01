@@ -54,9 +54,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Ercas extends Model
 {
-    use SoftDeletes;
+    //use SoftDeletes;
 
-    public $table = 'Users';
+    public $table = 'payment_dolce';
     
  const CREATED_AT = 'created_at';
  const UPDATED_AT = 'updated_at';
