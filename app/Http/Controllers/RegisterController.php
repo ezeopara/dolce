@@ -32,8 +32,15 @@ class RegisterController extends Controller {
     public function create() {
         //
         if (Session::get('key')) {
+            $key = Session::get('key');
+            $profile = Register::where('transaction_id', $key)->first();
             $title = 'Register';
-            return view('user.create', compact('title'));
+            if (! empty($profile) && $key == $profile->transaction_id) {
+                Session::flash('message', 'You have successfully registered. You can edit your profile by clicking on edit Button');
+                return view('user.create', compact('title','profile'));
+            }
+
+            return view('user.create', compact('title','profile'));
         } else {
             return redirect('/');
         }
@@ -54,7 +61,7 @@ class RegisterController extends Controller {
                 //sending email to the user
                 Mail::send('email.success', ['user' => $register], function ($m) use ($register) {
                     $m->from('oparannabueze@gmail.com', 'Dolce Registration');
-                    $m->to($register->email, $register->first_name)->subject('Registration Successful!');
+                    $m->to($register->email, $register->first_name)->subject('Dolce Registration Successful!');
                 });
 
                 Session::flash('message', 'You have successfully Registered');
@@ -96,7 +103,7 @@ class RegisterController extends Controller {
      * @param  int  $id
      * @return Response
      */
-    public function update($id) {
+    public function update(Request $request, $id) {
         //
     }
 
@@ -132,9 +139,37 @@ class RegisterController extends Controller {
         Session::forget('key');
         return redirect('/');
     }
-    public function contact(){
+
+    public function contact() {
         $title = 'Contact Page';
-        return view('user.contact',  compact('title'));
+        return view('user.contact', compact('title'));
+    }
+
+    /*
+     * Getting user profile
+     */
+
+    public function profile() {
+        if (Session::get('key')) {
+            $key = Session::get('key');
+            $title = 'Edit Profile';
+            $profile = Register::where('transaction_id', $key)->first();
+            return view('user.profile', compact('title', 'profile'));
+        } else {
+            return redirect('/');
+        }
+    }
+
+    public function profileUpdate(RegisterRequest $request) {
+        if (Session::get('key')) {
+            $id = Session::get('key');
+            $profile = Register::where('transaction_id', $id)->first();
+            $profile->update($request->all());
+            Session::flash('message', 'You have sucefully updated your record');
+            return redirect('/register/profile');
+        } else {
+            
+        }
     }
 
 }

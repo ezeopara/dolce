@@ -18,6 +18,8 @@ Route::get('register/user','RegisterController@create');
 Route::post('register/user','RegisterController@store');
 Route::get('register/contact','RegisterController@contact');
 Route::get('register/logout', 'RegisterController@logout');
+Route::get('register/profile','RegisterController@profile');
+Route::post('register/profile','RegisterController@profileUpdate');
 
 //Backend route
 Route::resource('/user','UserController');

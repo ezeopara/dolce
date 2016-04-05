@@ -29,6 +29,7 @@ class CreateRegisterMigration extends Migration
             $table->string('eye_colour');
             $table->string('height');
             $table->string('weight');
+            $table->string('waist');
             $table->string('burst');
             $table->string('hips');
             $table->string('occupation');

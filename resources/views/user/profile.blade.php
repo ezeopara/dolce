@@ -86,9 +86,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Form
-                    @if( ! empty($profile))
-                    <small class="pull-right"><a href="{{action('RegisterController@profile')}}">Edit Profile</a></small>
-                    @endif
+                   
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
@@ -112,23 +110,23 @@
 </div>
 <br />
 <div class="row">
-    {!! Form::open(['action'=>'RegisterController@store','role'=>'form']) !!}
+    {!! Form::open(['method' => 'POST', 'action'=> ['RegisterController@profileUpdate']]) !!}
     <div class="col-md-6 ">
         <div class="form-group">
             {!! Form::label('surname','Surname:')!!}
-            {!! Form::text('surname',null,['class'=>'form-control','placeholder'=>'Please enter surname']) !!}
+            {!! Form::text('surname',$profile->surname,['class'=>'form-control','placeholder'=>'Please enter surname']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('first_name','First Name:')!!}
-            {!! Form::text('first_name',null,['class'=>'form-control','placeholder'=>'Please enter first name']) !!}
+            {!! Form::text('first_name',$profile->first_name,['class'=>'form-control','placeholder'=>'Please enter first name']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('date of birth','Date of Birth:')!!}
-            {!! Form::text('date_of_birth',null,['class'=>'form-control','id' => 'datepicker','placeholder'=>'Year-Month-Day']) !!}
+            {!! Form::text('date_of_birth',$profile->date_of_birth,['class'=>'form-control','id' => 'datepicker','placeholder'=>'Year-Month-Day']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('place_of_birth','Place of Birth:')!!}
-            {!! Form::text('place_of_birth',null,['class'=>'form-control','placeholder'=>'Please enter place of birth']) !!}
+            {!! Form::text('place_of_birth',$profile->place_of_birth,['class'=>'form-control','placeholder'=>'Please enter place of birth']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('state_of_birth','State of Origin:')!!}
@@ -176,55 +174,55 @@
 
         <div class="form-group">
             {!! Form::label('contact_address','Contact Address:')!!}
-            {!! Form::textarea('contact_address',null,['class'=>'form-control','']) !!}
+            {!! Form::textarea('contact_address',$profile->contact_address,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('email','Email Address:')!!}
-            {!! Form::email('email',null,['class'=>'form-control','']) !!}
+            {!! Form::email('email',$profile->email,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('contact_phone','Contact Phone:')!!}
-            {!! Form::text('contact_phone',null,['class'=>'form-control','']) !!}
+            {!! Form::text('contact_phone',$profile->contact_phone,['class'=>'form-control','']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::label('BBM_pin','BBM pin:')!!}
-            {!! Form::text('BBM_pin',null,['class'=>'form-control','']) !!}
+            {!! Form::text('BBM_pin',$profile->BBM_pin,['class'=>'form-control','']) !!}
         </div><!--- end of part 1--->
 
 
 
         <div class="form-group">
             {!! Form::label('complexion','Complexion:')!!}
-            {!! Form::text('complexion',null,['class'=>'form-control','']) !!}
+            {!! Form::text('complexion',$profile->complexion,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('hair_colour','Hair Colour:')!!}
-            {!! Form::text('hair_colour',null,['class'=>'form-control','']) !!}
+            {!! Form::text('hair_colour',$profile->hair_colour,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('eye_colour','Eye Colour:')!!}
-            {!! Form::text('eye_colour',null,['class'=>'form-control','']) !!}
+            {!! Form::text('eye_colour',$profile->eye_colour,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('height','Height:')!!}
-            {!! Form::text('height',null,['class'=>'form-control','']) !!}
+            {!! Form::text('height',$profile->height,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('weight','Weight:')!!}
-            {!! Form::text('weight',null,['class'=>'form-control','']) !!}
+            {!! Form::text('weight',$profile->weight,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('burst','Burst:')!!}
-            {!! Form::text('burst',null,['class'=>'form-control','']) !!}
+            {!! Form::text('burst',$profile->burst,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('waist','Waist:')!!}
-            {!! Form::text('waist',null,['class'=>'form-control','']) !!}
+            {!! Form::text('waist',$profile->waist,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('hips','Hips:')!!}
-            {!! Form::text('hips',null,['class'=>'form-control','']) !!}
+            {!! Form::text('hips',$profile->hips,['class'=>'form-control','']) !!}
         </div><!--- End of part 2--->
 
 
@@ -232,23 +230,23 @@
 
         <div class="form-group">
             {!! Form::label('occupation','Occupation:')!!}
-            {!! Form::text('occupation',null,['class'=>'form-control','']) !!}
+            {!! Form::text('occupation',$profile->occupation,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('student','If Student, Where?:')!!}
-            {!! Form::text('student',null,['class'=>'form-control','']) !!}
+            {!! Form::text('student',$profile->student,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('course_of_study','Course of Study, Dept/Level:')!!}
-            {!! Form::text('course_of_study',null,['class'=>'form-control','']) !!}
+            {!! Form::text('course_of_study',$profile->course_of_study,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('working_as','Working As:')!!}
-            {!! Form::text('working_as',null,['class'=>'form-control','']) !!}
+            {!! Form::text('working_as',$profile->working_as,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('religion','Religion:')!!}
-            {!! Form::text('religion',null,['class'=>'form-control','']) !!}
+            {!! Form::text('religion',$profile->religion,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('language_speaking','Language Speaking:')!!}
@@ -263,7 +261,7 @@
 
         <div class="form-group">
             {!! Form::label('describe_yourself','Briefly Describe Yourself:') !!}
-            {!! Form::textarea('describe_yourself',null,['class'=>'form-control','']) !!}
+            {!! Form::textarea('describe_yourself',$profile->describe_yourself,['class'=>'form-control','']) !!}
         </div>
 
 
@@ -277,79 +275,79 @@
     <div class="col-md-6 ">
         <div class="form-group">
             {!! Form::label('pagent','Have you participated in any beauty pagent? if yes, State pagent and year:')!!}
-            {!! Form::text('pagent',null,['class'=>'form-control','']) !!}
+            {!! Form::text('pagent',$profile->pagent,['class'=>'form-control','']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::label('hobbies','Hobbies:')!!}
-            {!! Form::text('hobbies',null,['class'=>'form-control','']) !!}
+            {!! Form::text('hobbies',$profile->hobbies,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('best_dish','Best Dish:')!!}
-            {!! Form::text('best_dish',null,['class'=>'form-control','']) !!}
+            {!! Form::text('best_dish',$profile->best_dish,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('role_model','Who is your Role Model:')!!}
-            {!! Form::text('role_model',null,['class'=>'form-control','']) !!}
+            {!! Form::text('role_model',$profile->role_model,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('why_model','Why?:')!!}
-            {!! Form::text('why_model',null,['class'=>'form-control','']) !!}
+            {!! Form::text('why_model',$profile->why_model,['class'=>'form-control','']) !!}
         </div><!--- end of part 4--->
 
         <div class="form-group">
             {!! Form::label('favourite_colour','Favourite Colour:')!!}
-            {!! Form::text('favourite_colour',null,['class'=>'form-control','']) !!}
+            {!! Form::text('favourite_colour',$profile->favourite_colour,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('favourite_outfit','Favourite Outfit:')!!}
-            {!! Form::text('favourite_outfit',null,['class'=>'form-control','']) !!}
+            {!! Form::text('favourite_outfit',$profile->favourite_outfit,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('favourite_book','Favourite Book:')!!}
-            {!! Form::text('favourite_book',null,['class'=>'form-control','']) !!}
+            {!! Form::text('favourite_book',$profile->favourite_book,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('favourite_author','Favourite Author:')!!}
-            {!! Form::text('favourite_author',null,['class'=>'form-control','']) !!}
+            {!! Form::text('favourite_author',$profile->favourite_author,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('favourite_movie','Favourite Movie:')!!}
-            {!! Form::text('favourite_movie',null,['class'=>'form-control','']) !!}
+            {!! Form::text('favourite_movie',$profile->favourite_movie,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('favourite_actor','Favourite Actor/Actress:')!!}
-            {!! Form::text('favourite_actor',null,['class'=>'form-control','']) !!}
+            {!! Form::text('favourite_actor',$profile->favourite_actor,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('favourite_music','Favourite Type of Music:')!!}
-            {!! Form::text('favourite_music',null,['class'=>'form-control','']) !!}
+            {!! Form::text('favourite_music',$profile->favourite_music,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('favourite_musician','Favourite Musician:')!!}
-            {!! Form::text('favourite_musician',null,['class'=>'form-control','']) !!}
+            {!! Form::text('favourite_musician',$profile->favourite_musician,['class'=>'form-control','']) !!}
         </div><!--- end of part 5--->
 
 
         <div class="form-group">
             {!! Form::label('pagent_reason','Why did you enter for this pagent?:')!!}
-            {!! Form::textarea('pagent_reason',null,['class'=>'form-control','']) !!}
+            {!! Form::textarea('pagent_reason',$profile->pagent_reason,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('contestant','If you ara a judge, what will you ask the contestant:')!!}
-            {!! Form::text('contestant',null,['class'=>'form-control','']) !!}
+            {!! Form::text('contestant',$profile->contestant,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('win_pagent','Why do you think you can win this pagent?:')!!}
-            {!! Form::textarea('win_pagent',null,['class'=>'form-control','']) !!}
+            {!! Form::textarea('win_pagent',$profile->win_pagent,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('hiv','What is your opinion about people leaving with HIV/AIDS?:')!!}
-            {!! Form::textarea('hiv',null,['class'=>'form-control','']) !!}
+            {!! Form::textarea('hiv',$profile->hiv,['class'=>'form-control','']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('child_abuse','What is your opinion about Child labour, Woman trafficking and Child abuse?:')!!}
-            {!! Form::textarea('child_abuse',null,['class'=>'form-control','']) !!}
+            {!! Form::textarea('child_abuse',$profile->child_abuse,['class'=>'form-control','']) !!}
         </div><!--- end of part 6---->
         <button type="submit" name="submit" class="btn btn-default">Register</button>
 

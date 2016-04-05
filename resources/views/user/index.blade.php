@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Modern Business - Start Bootstrap Template</title>
+        <title>{{$title}}</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -137,39 +137,31 @@
                         Welcome to the Most Beautiful Girl in Abuja (MBGA) 2016
                     </h3>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12 text-justify">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
-                        </div>
+                        
                         <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                            <div class="col-md-12">
+                                <h3>About Us</h3>
+                            </div>
+                            <div class="col-md-4">
+                                <p>The city of Abuja is set to witness one of the biggest event of the year as the countdown continues to the finals of the 15th edition of Most Beautiful Girl In Abuja pageant to hold October 31,2015.</p>
+                                <p>MBGA is Known to be one of the most celebrated pageant shows in Nigeria, but the uniqueness of the 2015 edition is the fact that it marks the 15th year in existence.</p>
+                            
+                            </div>
+                            <div class="col-md-4">
+                                <p>The 36 contestants released are to slog it out on the magnificent stage where the winner represents Nigeria in an international contest and win a brand new car. MBGA has over the past years presented car prizes to the winners as well as empowering them with their individual pet- projects.</p>
+                            
+                            </div>
+                            <div class="col-md-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                             <a href="#" class="btn btn-default">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
             <!-- /.row -->
 
@@ -229,20 +221,20 @@
             <!-- Features Section -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="page-header">Modern Business Features</h2>
+                    <h2 class="page-header">Step to Register For MBGA 2016</h2>
                 </div>
                 <div class="col-md-6">
-                    <p>The Modern Business template by Start Bootstrap includes:</p>
+                    <p>The registration step includes:</p>
                     <ul>
-                        <li><strong>Bootstrap v3.2.0</strong>
+                        <li>Visiting any bank of choice and making payment of N5000 to obtain registration number
                         </li>
-                        <li>jQuery v1.11.0</li>
-                        <li>Font Awesome v4.1.0</li>
-                        <li>Working PHP contact form with validation</li>
-                        <li>Unstyled page elements for easy customization</li>
-                        <li>17 HTML pages</li>
+                        <li>Visit our website: www.mbga2016.com</li>
+                        <li>Click on register</li>
+                        <li>Enter your registration number</li>
+                        <li>Fill up the registration form</li>
+                        <li>Receive an email confirmation</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                    <p>Please note that you can edit your information any time.</p>
                 </div>
                 <div class="col-md-6">
                     <img class="img-responsive" src="{{ asset('image/DSC_1722.jpg')}}" alt="">

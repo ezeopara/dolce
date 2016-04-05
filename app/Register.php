@@ -23,6 +23,7 @@ class Register extends Model
         'eye_colour',
         'height',
         'weight',
+        'waist',
         'burst',
         'hips',
         'occupation',

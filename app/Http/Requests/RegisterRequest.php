@@ -35,6 +35,7 @@ class RegisterRequest extends Request
             'BBM_pin'=>'min:8|max:8',
             'height'=>'numeric',
             'weight'=>'numeric',
+            'waist'=>'numeric',
             'burst'=>'numeric',
             'hip'=>'numeric'
         ];
