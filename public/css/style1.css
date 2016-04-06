@@ -63,7 +63,7 @@ h4 {
 Navbar height
 ********************************
 .navbar-fixed-top {
-    min-height: 100px;
+    //min-height: 100px;
 }
 
 .navbar-nav > li > a {
@@ -88,6 +88,7 @@ Navbar height
     padding-top: 10px;
     padding-bottom: 10px;}
 }
+
 
 
 

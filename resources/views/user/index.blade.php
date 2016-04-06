@@ -32,7 +32,7 @@
     </head>
 
     <body class="body-colour" style="background-image:url('{{ asset('image/bg4.jpg')}}');">
-        
+
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -44,11 +44,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{action('RegisterController@index')}}"><img src='{{ asset('image/logo.jpg')}}' height="80"  /></a>
+                    <a class="navbar-brand" href="{{action('RegisterController@index')}}" ><img src='{{ asset('image/logo1.png')}}'  /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+
                         <li>
                             <a href="{{action('RegisterController@index')}}">Home</a>
                         </li>
@@ -58,19 +59,21 @@
                         <li>
                             <a href="{{action('RegisterController@contact')}}">Contact</a>
                         </li>
-                         <?php if(Session::get('key')):?>
+                        <?php if (Session::get('key')): ?>
+                            <li>
+                                <a href="{{action('RegisterController@create')}}">Form</a>
+                            </li>
+                            <li>
+                                <a href="{{action('RegisterController@logout')}}">Logout</a>
+                            </li>
+                        <?php else: ?>
+                            <li>
+                                <a href="{{action('RegisterController@show')}}">Register</a>
+                            </li>
+                        <?php endif; ?>
                         <li>
-                            <a href="{{action('RegisterController@create')}}">Form</a>
+                            <img src='{{ asset('image/logo.png')}}'  />
                         </li>
-                        <li>
-                            <a href="{{action('RegisterController@logout')}}">Logout</a>
-                        </li>
-                        <?php else:?>
-                        <li>
-                            <a href="{{action('RegisterController@show')}}">Register</a>
-                        </li>
-                        <?php endif;?>
-
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -80,55 +83,55 @@
         <div style="height: 50px;"></div>
         <!-- Header Carousel -->
         <div class="container body-colour1">
-        <header id="myCarousel" class="carousel slide height-line">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+            <header id="myCarousel" class="carousel slide height-line">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner height-line">
-                <div class="item active">
-                    <div class="fill" style="background-image:url('{{ asset('image/DSC_2100.jpg')}}');">                     
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner height-line">
+                    <div class="item active">
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_2100.jpg')}}');">                     
+                        </div>
+                        <div class="carousel-caption">
+                            <h2>Caption 1</h2>
+                        </div>
                     </div>
-                    <div class="carousel-caption">
-                        <h2>Caption 1</h2>
+                    <div class="item">
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_1223.jpg')}}');"></div>
+                        <div class="carousel-caption">
+                            <h2>Caption 2</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_0214.jpg')}}');"></div>
+                        <div class="carousel-caption">
+                            <h2>Caption 2</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_0142.jpg')}}');"></div>
+                        <div class="carousel-caption">
+                            <h2>Caption 3</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="fill" style="background-image:url('{{ asset('image/DSC_1223.jpg')}}');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 2</h2>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="fill" style="background-image:url('{{ asset('image/DSC_0214.jpg')}}');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 2</h2>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="fill" style="background-image:url('{{ asset('image/DSC_0142.jpg')}}');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 3</h2>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="icon-next"></span>
-            </a>
-        </header>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </header>
 
-        <!-- Page Content -->
-        
+            <!-- Page Content -->
+
 
             <!-- Marketing Icons Section -->
             <div class="row">
@@ -139,23 +142,39 @@
                 </div>
                 <div class="col-md-12 text-justify">
                     <div class="panel panel-default">
-                        
+
                         <div class="panel-body">
                             <div class="col-md-12">
                                 <h3>About Us</h3>
                             </div>
                             <div class="col-md-4">
-                                <p>The city of Abuja is set to witness one of the biggest event of the year as the countdown continues to the finals of the 15th edition of Most Beautiful Girl In Abuja pageant to hold October 31,2015.</p>
-                                <p>MBGA is Known to be one of the most celebrated pageant shows in Nigeria, but the uniqueness of the 2015 edition is the fact that it marks the 15th year in existence.</p>
-                            
+                                ‎<p>We ‎anticipated A Good Event!.
+                                ‎We worked For An Impressive Show!!‎.
+                               We Laboured For A Grand Anniversary Edition!</p>
+
+                                ‎<p>We are truly humbled for the overwhelming support and goodwill we received in the bid to host the 15th edition of Most ‎<p>Beautiful Girl In Abuja, words can not quantify ‎how grateful we are.</p>
+
+                                ‎<p>It was indeed a long Journey of success and a memory night that will not be forgotten in a hurry.</p> 
+
+                               
+
                             </div>
                             <div class="col-md-4">
-                                <p>The 36 contestants released are to slog it out on the magnificent stage where the winner represents Nigeria in an international contest and win a brand new car. MBGA has over the past years presented car prizes to the winners as well as empowering them with their individual pet- projects.</p>
-                            
+                                 ‎<p>This remarkable feat was made possible by the following platforms:
+                                    ‎<p>AIT, HIP TV, LoveFm, RythmFm,   AlexReports, Option A, Gbenga Deco, Success Studio, Newsland‎, Jimcolours, DMK Media, Shola Creative Studio, Studio24, Merit Digital (Wasiu), Numero Blog, CV Edoziem Blog. 
+                                    We will not undermine the immeasurable roles of these hospitality brands Like Transcorp Hilton, Sandralia Hotel, 3Js Hotel, Bolingo Hotel, Top Rank Hotel Galaxy.</p>
+
+                                ‎
+
+                                ‎
                             </div>
                             <div class="col-md-4">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
+                                <p>The success story will not be complete without mentioning the following : House Of Vodi, SD Production, Sammy Innovation, Razor Sharp Collection, A-Z Couture, EL Jargo Couture, Fashion Africa, Carol & Carol PR Consultant, Ehis Hair, Exquisite‎ Touch Clinic & spa, Enohillz Global Limited, Abeysteph Globalink, Lona Global Resource, Lowo Africa Designs, Faerenz Designs,  Emmy Hair.
+                                    etc</p>
+                                <p>Great thanks to my ex- MBGA Queens‎ like Princess Ofili , Grace Ndam, Chioma Ezenwa, Stella Charles, Chinelo Chukwura, Esther Obiageli etc</p>
+
+                                ‎<p>To my Lovely Wife and Children, your love and patience was my greatest motivation.</p>
+                                <a href="#" class="btn btn-default">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -278,11 +297,11 @@
 
         <!-- Script to Activate the Carousel -->
         <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    
-    
+$('.carousel').carousel({
+    interval: 5000 //changes the speed
+})
+
+
         </script>
 
     </body>
