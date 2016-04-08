@@ -54,7 +54,7 @@
                             <a href="{{action('RegisterController@index')}}">Home</a>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a href="{{action('RegisterController@about')}}">About</a>
                         </li>
                         <li>
                             <a href="{{action('RegisterController@contact')}}">Contact</a>
@@ -148,33 +148,31 @@
                                 <h3>About Us</h3>
                             </div>
                             <div class="col-md-4">
-                                ‎<p>We ‎anticipated A Good Event!.
-                                ‎We worked For An Impressive Show!!‎.
-                               We Laboured For A Grand Anniversary Edition!</p>
+                                ‎<p>The MBGA is a beauty pageant organized annually by Dolce Entertainment Limited in the Federal Capital of Abuja. The pageant has been in existence for over Fifteen (15) years and has gained good reputation throughout the federation.</p>
 
-                                ‎<p>We are truly humbled for the overwhelming support and goodwill we received in the bid to host the 15th edition of Most ‎<p>Beautiful Girl In Abuja, words can not quantify ‎how grateful we are.</p>
+                                ‎<p>This year’s edition shall be the 16th  and promises to be the most glamorous one of all.</p>
 
-                                ‎<p>It was indeed a long Journey of success and a memory night that will not be forgotten in a hurry.</p> 
+                                ‎<p>The objective of the pageant is to produce world class pageant and models who shall be the ambassadors of our great country Nigeria outside the shores of this country.</p> 
 
-                               
+
 
                             </div>
                             <div class="col-md-4">
-                                 ‎<p>This remarkable feat was made possible by the following platforms:
-                                    ‎<p>AIT, HIP TV, LoveFm, RythmFm,   AlexReports, Option A, Gbenga Deco, Success Studio, Newsland‎, Jimcolours, DMK Media, Shola Creative Studio, Studio24, Merit Digital (Wasiu), Numero Blog, CV Edoziem Blog. 
-                                    We will not undermine the immeasurable roles of these hospitality brands Like Transcorp Hilton, Sandralia Hotel, 3Js Hotel, Bolingo Hotel, Top Rank Hotel Galaxy.</p>
+                                ‎<p>Indeed  the  show  has  produced  many  of  such  models  and  some  of  our previous winners/contestants have made stunning appearances at other pageants within and outside Nigeria.</p>
 
-                                ‎
+                                ‎<p>From the inception of the pageant to date, we have received collaboration and sponsorship from various corporate bodies including ERCAS INTEGRATED SOLUTIONS LIMITED, the Nigerian Breweries Plc (AMSTEL MALTA), CHIMA MOVIE EMPIRE U.S.A, Visafone,  Nafdac,  DAAR  Communications  Owners  of  AIT/Ray  Power
+                                    100.5FM, NTA Plus, AM Express, ITV, DBN Television, Hot FM, Cool FM, Gem Electronic </p>
 
                                 ‎
                             </div>
                             <div class="col-md-4">
-                                <p>The success story will not be complete without mentioning the following : House Of Vodi, SD Production, Sammy Innovation, Razor Sharp Collection, A-Z Couture, EL Jargo Couture, Fashion Africa, Carol & Carol PR Consultant, Ehis Hair, Exquisite‎ Touch Clinic & spa, Enohillz Global Limited, Abeysteph Globalink, Lona Global Resource, Lowo Africa Designs, Faerenz Designs,  Emmy Hair.
-                                    etc</p>
-                                <p>Great thanks to my ex- MBGA Queens‎ like Princess Ofili , Grace Ndam, Chioma Ezenwa, Stella Charles, Chinelo Chukwura, Esther Obiageli etc</p>
-
-                                ‎<p>To my Lovely Wife and Children, your love and patience was my greatest motivation.</p>
-                                <a href="#" class="btn btn-default">Learn More</a>
+                                <p>Board, The Sun Newspaper, This Day Newspaper, High  Society Magazine, Chapters  Digital, Arik  Air, Chanchangi-Airline,
+                                    Transcorp Hilton, Abuja Sheraton Hotel & Towers, Sandralia Hotel, Top
+                                    Rank Hotel Galaxy, 3J’s Hotel, Chida Hotels, Febson Hotel, Nicon Luxury, Nanet Suites, Studio 24, Mattson Creatives Studio, VODI Tailors, Shola
+                                    Creative   Studio,   Bnatural,   Dreswel   Ventures   Limited,   I’AM,   Doxa, Eat.Com, Drumstix, Tetrazzini Foods Limited, Aqua Nite Club, Basement Nite Club, Cubana Lounge, Kryxtal Lounge, Denis Hotels, Agura Hotel,
+                                    Chancellery Suites etc.
+                                </p>
+                                <a href="{{action('RegisterController@about')}}" class="btn btn-default">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -240,20 +238,20 @@
             <!-- Features Section -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="page-header">Step to Register For MBGA 2016</h2>
+                    <h2 class="page-header">2016 MOST BEAUTIFUL GIRL IN ABUJA</h2>
                 </div>
                 <div class="col-md-6">
-                    <p>The registration step includes:</p>
+                    <p>HOW TO APPLY:</p>
                     <ul>
-                        <li>Visiting any bank of choice and making payment of N5000 to obtain registration number
+                        <li>PAY 5K @ ANY BANK NATIONWIDE 
                         </li>
-                        <li>Visit our website: www.mbga2016.com</li>
-                        <li>Click on register</li>
-                        <li>Enter your registration number</li>
-                        <li>Fill up the registration form</li>
-                        <li>Receive an email confirmation</li>
+                        <li>ACC. NAME: DOLCE ENTERTAINMENT LTD. </li>
+                        <li>login to www.mbga2016.com to register</li>
+                        <li>also, fill & submit the form via www.mbga2016.com  </li>
+                        <li>Please print out your submited form for verification. </li>
+
                     </ul>
-                    <p>Please note that you can edit your information any time.</p>
+                    <p>This automatically qualifies you to be screened in august; the winner represents nigeria at the all africa beauty pageant so is natiowide... so be one of the lucky contestants for the 2016 mbga grand finale october 29th   @transcorp hilton abuja nigeria. </p>
                 </div>
                 <div class="col-md-6">
                     <img class="img-responsive" src="{{ asset('image/DSC_1722.jpg')}}" alt="">
@@ -267,10 +265,13 @@
             <div class="well">
                 <div class="row">
                     <div class="col-md-8">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                        <h5><strong>Contact:</strong></h5>
+                        <p>Phone: 
+                            08034523698, 08062243037, 08055610088... 
+                        </p>
+                        <p>WINNING: A brand new car+a trip to s.a. to represent naija at the all africa beauty pageant in south africa+nafdac ambassador+modeling
+                            contracts+mbga rep at the mbgn & many more... hurry now, limited forms available!!!
+                        </p>
                     </div>
                 </div>
             </div>

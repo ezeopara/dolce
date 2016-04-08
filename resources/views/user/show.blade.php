@@ -53,7 +53,7 @@
                             <a href="{{action('RegisterController@index')}}">Home</a>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a href="{{action('RegisterController@about')}}">About</a>
                         </li>
                         <li>
                             <a href="{{action('RegisterController@contact')}}">Contact</a>

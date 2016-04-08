@@ -168,8 +168,16 @@ class RegisterController extends Controller {
             Session::flash('message', 'You have sucefully updated your record');
             return redirect('/register/profile');
         } else {
-            
+            return redirect('/');
         }
+    }
+    /*
+     * Dispalys about us page
+     * 
+     */
+    public function about(){
+        $title = 'About Page';
+        return view('user.about', compact('title'));
     }
 
 }
