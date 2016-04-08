@@ -31,7 +31,7 @@
 
     </head>
 
-    <body class="body-colour" style="background-image:url('{{ asset('image/bg4.jpg')}}');">
+    <body class="body-colour" style="background-image:url('{{ asset('image/bg4.jpg')}}')">
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -98,25 +98,25 @@
                         <div class="fill" style="background-image:url('{{ asset('image/DSC_2100.jpg')}}');">                     
                         </div>
                         <div class="carousel-caption">
-                            <h2>Caption 1</h2>
+                           
                         </div>
                     </div>
                     <div class="item">
                         <div class="fill" style="background-image:url('{{ asset('image/DSC_1223.jpg')}}');"></div>
                         <div class="carousel-caption">
-                            <h2>Caption 2</h2>
+                            
                         </div>
                     </div>
                     <div class="item">
                         <div class="fill" style="background-image:url('{{ asset('image/DSC_0214.jpg')}}');"></div>
                         <div class="carousel-caption">
-                            <h2>Caption 2</h2>
+                            
                         </div>
                     </div>
                     <div class="item">
                         <div class="fill" style="background-image:url('{{ asset('image/DSC_0142.jpg')}}');"></div>
                         <div class="carousel-caption">
-                            <h2>Caption 3</h2>
+                            
                         </div>
                     </div>
                 </div>
@@ -265,7 +265,7 @@
             <div class="well">
                 <div class="row">
                     <div class="col-md-8">
-                        <h5><strong>Contact:</strong></h5>
+                        <h3><strong>Contact:</strong></h3>
                         <p>Phone: 
                             08034523698, 08062243037, 08055610088... 
                         </p>
