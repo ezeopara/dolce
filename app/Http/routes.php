@@ -31,24 +31,4 @@ Route::get('/admin/logout','AdminController@logout');
 Route::get('admin/users','AdminController@listUsers');
 Route::get('admin/users/{any}','AdminController@show');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::resource('$Ercas$s', '$Ercas$Controller');
-
 Route::resource('ercas', 'ErcasController');
