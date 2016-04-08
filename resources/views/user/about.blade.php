@@ -120,11 +120,7 @@
                         Creative   Studio,   Bnatural,   Dreswel   Ventures   Limited,   I’AM,   Doxa, Eat.Com, Drumstix, Tetrazzini Foods Limited, Aqua Nite Club, Basement Nite Club, Cubana Lounge, Kryxtal Lounge, Denis Hotels, Agura Hotel,
                         Chancellery Suites etc.
                     </p>
-                    <p><strong>FOR  SPONSORSHIP  AND  ADVERT  PLACEMENT  CONTACT  US  @  NO.  8
-                            BIRNIN KEBBI STREET GARKI 2 NEAR IQ ACADEMY.
-                            CALL OUR LINES: 0803-4523698, 0805-1774413. 0r send us an e-mail:
-                            info@mbgaevents.com, dolceentertainmentng@yahoo.com
-                        </strong></p>
+                   
                     <p><strong>MISSION:</strong> We are created to promote the great image of our country
                         Nigeria to the fullest.
                     </p>
@@ -175,6 +171,11 @@
                         info@mbgaevents.com, dolceentertainmentng@yahoo.com
 
                     </p>
+                     <p><strong>FOR  SPONSORSHIP  AND  ADVERT  PLACEMENT  CONTACT  US  @  NO.  8
+                            BIRNIN KEBBI STREET GARKI 2 NEAR IQ ACADEMY.
+                            CALL OUR LINES: 0803-4523698, 0805-1774413. 0r send us an e-mail:
+                            info@mbgaevents.com, dolceentertainmentng@yahoo.com
+                        </strong></p>
                 </div>
             </div>
             <!-- /.row -->

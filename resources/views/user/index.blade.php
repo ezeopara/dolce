@@ -269,7 +269,7 @@
                         <p>Phone: 
                             08034523698, 08062243037, 08055610088... 
                         </p>
-                        <p>WINNING: A brand new car+a trip to s.a. to represent naija at the all africa beauty pageant in south africa+nafdac ambassador+modeling
+                        <p>WINNING: A brand new car+a trip to S.A. to represent naija at the all africa beauty pageant in south africa+nafdac ambassador+modeling
                             contracts+mbga rep at the mbgn & many more... hurry now, limited forms available!!!
                         </p>
                     </div>
