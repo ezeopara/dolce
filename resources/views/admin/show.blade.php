@@ -14,6 +14,10 @@
 
         @if($user)
         <div class="row">
+            <div class="col-md-3">Passport:</div>
+            <div class="col-md-9"><img src="{{asset("uploads/".$user->images['filename'])}}" height="200px" width="170px" alt="" /></div>
+        </div>
+        <div class="row">
             <div class="col-md-3">Transact Id:</div>
             <div class="col-md-9">{{$user->transaction_id}}</div>
         </div>
@@ -180,6 +184,10 @@
           <div class="row">
             <div class="col-md-3">child Abuse:</div>
             <div class="col-md-9">{{$user->child_abuse}}</div>
+        </div>
+          <div class="row">
+            
+              <div class="col-md-6 pull-right"><a href="{{action('AdminController@listUsers')}}" class="btn btn-success"><small>Back</small></a></div>
         </div>
         @endif
         </div>

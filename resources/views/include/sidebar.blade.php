@@ -31,12 +31,12 @@
           <ul class="sidebar-menu">
             <li class="header">HEADER</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
+            <li class="active"><a href="{{action('AdminController@index')}}"><i class="fa fa-link"></i> <span>Dashboard</span></a></li>
               <li class="treeview">
               <a href="#"><i class="fa fa-link"></i> <span>User Details</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
                 <li><a href="{{action('AdminController@listUsers')}}">Registered Users</a></li>
-                <li><a href="#">Add User</a></li>
+<!--                <li><a href="#">Add User</a></li>-->
               </ul>
             </li>
             @if(Auth::User()->role == 'admin')
@@ -44,12 +44,11 @@
               <a href="#"><i class="fa fa-link"></i> <span>Create Admin</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
                 <li><a href="{{action('UserController@create')}}">Add Admin Users</a></li>
-                <li><a href="">List Admin Users</a></li>
-                <li><a href="">Role</a></li>
+<!--                <li><a href="">List Admin Users</a></li>
+                <li><a href="">Role</a></li>-->
               </ul>
             </li>
             @endif
-            <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
 
           </ul><!-- /.sidebar-menu -->
         </section>

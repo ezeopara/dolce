@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Register;
 use App\User;
+use App\Models\Ercas;
 use Session;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -18,8 +19,9 @@ class AdminController extends Controller {
     public function index() {
         if (Auth::check()) {
             $users = Register::all();
+            $ercaspay = Ercas::all();
             $title = 'Dashboard';
-            return view('admin.dashboard', compact('title','users'));
+            return view('admin.dashboard', compact('title','users','ercaspay'));
         } else {
 
             return redirect('/admin');
@@ -27,7 +29,7 @@ class AdminController extends Controller {
     }
     public function show($id){
        $user = Register::findOrFail($id);
-       $title = 'User:'.$user->name;
+       $title = 'User Details';
        return view('admin.show',compact('title','user'));
     }
     public function listUsers(){
