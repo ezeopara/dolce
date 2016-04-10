@@ -64,6 +64,9 @@
                         </li>
                         <?php if(Session::get('key')):?>
                         <li>
+                                <a href="{{action('RegisterController@success')}}">Print Form</a>
+                            </li>
+                        <li>
                             <a href="{{action('RegisterController@logout')}}">Logout</a>
                         </li>
                         <?php else:?>
@@ -110,12 +113,13 @@
     <div class="col-md-12">
         @include('errors.error')
         @include('include.message')
+         @include('include.warning')
         @if( ! Session::has('message'))
     </div>
 </div>
 <br />
 <div class="row">
-    {!! Form::open(['action'=>'RegisterController@store','role'=>'form']) !!}
+    {!! Form::open(['action'=>'RegisterController@store','role'=>'form','files'=>true]) !!}
     <div class="col-md-6 ">
         <div class="form-group">
             {!! Form::label('surname','Surname:')!!}
@@ -184,6 +188,11 @@
         <div class="form-group">
             {!! Form::label('email','Email Address:')!!}
             {!! Form::email('email',null,['class'=>'form-control','']) !!}
+        </div>
+          <div class="form-group">
+            {!! Form::label('image','Passport:')!!}
+            {!! Form::file('image',['class'=>'form-control'])!!}
+            <span class="text-danger">Use CLTR button to select multiple image</span>
         </div>
         <div class="form-group">
             {!! Form::label('contact_phone','Contact Phone:')!!}

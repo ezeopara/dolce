@@ -64,6 +64,9 @@
                             <a href="{{action('RegisterController@create')}}">Form</a>
                         </li>
                         <li>
+                                <a href="{{action('RegisterController@success')}}">Print Form</a>
+                            </li>
+                        <li>
                             <a href="{{action('RegisterController@logout')}}">Logout</a>
                         </li>
                         <?php else:?>
@@ -112,6 +115,7 @@
             <div class="panel-heading">Enter reference number</div>
             <div class="panel-body">
                @include('include.message')
+                @include('include.warning')
                @include('errors.error')
                 {!! Form::open(['action'=>'ErcasController@index', 'role'=>'form'])!!}
 <!--RegisterController@login-->

@@ -68,7 +68,7 @@ class ErcasController extends AppBaseController
             Session::put('key',$user['transaction_id']);
             return redirect('register/user');
         } else{
-            Session::flash('message','Invalid User identification');
+            Session::flash('warning','Invalid User identification');
             return redirect('register');
         }
     }

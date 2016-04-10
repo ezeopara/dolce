@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class RegisterRequest extends Request
+class EditRegisterRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,11 +25,10 @@ class RegisterRequest extends Request
     {
         return [
             //
-            'surname' => 'required|min:3',
+              'surname' => 'required|min:3',
             'first_name' => 'required|min:3',
             'date_of_birth'=>'required|date_format:Y-m-d',
             'state_of_birth'=>'required',
-            'image'=>'required|mimes:jpeg,bmp,png,jpg',
             'contact_address'=>'required',
             'email'=>'required|email',
             'contact_phone'=>'required|digits:11',

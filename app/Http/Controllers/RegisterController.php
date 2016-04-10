@@ -6,8 +6,10 @@ use Mail;
 use Illuminate\Http\Request;
 use Session;
 use App\Register;
+use App\Image;
 use Redirect;
 use App\Http\Requests;
+use App\Http\Requests\EditRegisterRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Http\Controllers\Controller;
 
@@ -35,12 +37,12 @@ class RegisterController extends Controller {
             $key = Session::get('key');
             $profile = Register::where('transaction_id', $key)->first();
             $title = 'Register';
-            if (! empty($profile) && $key == $profile->transaction_id) {
-                Session::flash('message', 'You have successfully registered. You can edit your profile by clicking on edit Button');
-                return view('user.create', compact('title','profile'));
+            if (!empty($profile) && $key == $profile->transaction_id) {
+                Session::flash('message', 'You have successfully registered. You can edit your profile by clicking on edit Button.');
+                return view('user.create', compact('title', 'profile'));
             }
 
-            return view('user.create', compact('title','profile'));
+            return view('user.create', compact('title', 'profile'));
         } else {
             return redirect('/');
         }
@@ -52,24 +54,28 @@ class RegisterController extends Controller {
      * @return Response
      */
     public function store(RegisterRequest $request) {  //make request RegisterRequest
+        //check if user is login 
         if (Session::get('key')) {
-            $transaction_id = Session::get('key');
-            $request['transaction_id'] = $transaction_id;
+            if (!$request->hasFile('image')) {
+                Session::flash('message', 'You have to upload Passport Photograph');
+                return redirect('register/user');
+            }
+            $request['transaction_id'] = Session::get('key');
             $register = Register::create($request->all());
 
-            if ($register->email) {
-                //sending email to the user
-                Mail::send('email.success', ['user' => $register], function ($m) use ($register) {
-                    $m->from('oparannabueze@gmail.com', 'Dolce Registration');
-                    $m->to($register->email, $register->first_name)->subject('Dolce Registration Successful!');
-                });
+            //Upload image
+            $this->imageUpload($request, $register);
 
-                Session::flash('message', 'You have successfully Registered');
-                return redirect('register/user');
-            } else {
+            if (!$register->email) {
                 Session::flash('message', 'Oops!! Registration Failed');
                 return redirect('register/user');
             }
+            //sending email to the user
+            $this->sendMail($register);
+
+
+            Session::flash('message', 'You have successfully Registered! Please printout this page for record purposes');
+            return redirect('register/success');
         } else {
             return redirect('/');
         }
@@ -160,24 +166,79 @@ class RegisterController extends Controller {
         }
     }
 
-    public function profileUpdate(RegisterRequest $request) {
+    public function profileUpdate(EditRegisterRequest $request) {
         if (Session::get('key')) {
             $id = Session::get('key');
-            $profile = Register::where('transaction_id', $id)->first();
-            $profile->update($request->all());
+            $register = Register::where('transaction_id', $id)->first();
+            //updating the image table about the image update
+            $register->update($request->all());
+            
             Session::flash('message', 'You have sucefully updated your record');
             return redirect('/register/profile');
         } else {
             return redirect('/');
         }
     }
+
     /*
      * Dispalys about us page
      * 
      */
-    public function about(){
+
+    public function about() {
         $title = 'About Page';
         return view('user.about', compact('title'));
+    }
+
+    /*
+     * Upload image
+     */
+
+    private function imageUpload($request, $register) {
+        //upload image
+        $file = $request->file('image');
+        $filename = $file->getFilename() . '.' . $file->getClientOriginalExtension();
+        $mime = $file->getClientMimeType();
+        $originalFilename = $file->getClientOriginalName();
+        $file = $file->move(public_path() . '/uploads/', $filename);
+
+        //save image name to the database
+        $image = new Image(['filename' => $filename, 'mime' => $mime, 'original_filename' => $originalFilename]);
+        $image->register()->associate($register->id);
+        $image->save();
+    }
+
+   
+
+    /*
+     * Send email
+     */
+
+    private function sendMail($register) {
+        Mail::send('email.success', ['user' => $register], function ($m) use ($register) {
+            $m->from('oparannabueze@gmail.com', 'Dolce Registration');
+            $m->to($register->email, $register->first_name)->subject('Dolce Registration Successful!');
+        });
+    }
+
+    /*
+     * Displays success page
+     */
+
+    public function success() {
+        if (Session::get('key')) {
+            $title = 'Success Page';
+            $key = Session::get('key');
+            $user = Register::where('transaction_id', $key)->first();
+            if ($user) {
+                return view('user.success', compact('title', 'user'));
+            } else {
+                Session::flash('warning', 'Please fill the form to register.');
+                return view('user.success', compact('title', 'user'));
+            }
+        } else {
+            return redirect('/');
+        }
     }
 
 }

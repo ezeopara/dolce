@@ -64,6 +64,9 @@
                             <a href="{{action('RegisterController@create')}}">Form</a>
                         </li>
                         <li>
+                                <a href="{{action('RegisterController@success')}}">Print Form</a>
+                            </li>
+                        <li>
                             <a href="{{action('RegisterController@logout')}}">Logout</a>
                         </li>
                         <?php else:?>

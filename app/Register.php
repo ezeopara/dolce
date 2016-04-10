@@ -52,4 +52,8 @@ class Register extends Model
         'hiv',
         'child_abuse'
     ];
+    
+     public function images(){
+        return $this->hasOne('App\Image');
+    }
 }
