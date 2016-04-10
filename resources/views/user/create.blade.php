@@ -192,7 +192,7 @@
           <div class="form-group">
             {!! Form::label('image','Passport:')!!}
             {!! Form::file('image',['class'=>'form-control'])!!}
-            <span class="text-danger">Use CLTR button to select multiple image</span>
+            
         </div>
         <div class="form-group">
             {!! Form::label('contact_phone','Contact Phone:')!!}
