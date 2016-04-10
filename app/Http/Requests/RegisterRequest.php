@@ -38,7 +38,8 @@ class RegisterRequest extends Request
             'weight'=>'numeric',
             'waist'=>'numeric',
             'burst'=>'numeric',
-            'hip'=>'numeric'
+            'hip'=>'numeric',
+            'language_speaking'=>'required'
         ];
     }
 }

@@ -110,7 +110,7 @@
         <!-- Team Members -->
 	<div class="row-fluid">
         <div class="col-md-8">
-        	<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+        	<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4346189590246!2d7.481836914786614!3d9.024057693524284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0c7f9bd9d761%3A0xb565873ab7bf2921!2sBirnin+Kebbi+Cres%2C+Abuja%2C+Nigeria!5e0!3m2!1sen!2s!4v1460324129506"></iframe>
     	</div>
     	
       	<div class="col-md-4">

@@ -12,6 +12,7 @@
         <title>{{$title}}</title>
 
         <!-- Bootstrap Core CSS -->
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
 
@@ -137,7 +138,7 @@
                     </div>
                     <div class="form-group">
                         {!! Form::label('state_of_birth','State of Origin:')!!}
-                        <select name="state_of_birth" class="form-control">
+                        <select name="state_of_birth" class="form-control" id="state">
                             <option value=" ">Select State of Origin</option>
                             <option value="ABUJA FCT">ABUJA FCT</option>
                             <option value="ABIA">ABIA</option>
@@ -257,8 +258,8 @@
                     </div>
                     <div class="form-group">
                         {!! Form::label('language_speaking','Language Speaking:')!!}
-                        <select name="language_speaking" class="form-control">
-                            <option>Select language speaking</option>
+                        <select name="language_speaking" class="form-control" id="language">
+                            <option value=" ">Select language speaking</option>
                             <option value="English">English</option>
                             <option value="Igbo">Igbo</option>
                             <option value="Yoruba">Yoruba</option>
@@ -378,6 +379,7 @@
 
         <!-- jQuery -->
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
       <!--    <script src="js/jquery.js"></script>-->
 
@@ -388,6 +390,10 @@
 $(function () {
     $("#datepicker").datepicker({dateFormat: 'yy-mm-dd'});
 });
+
+$('#language').select2();
+$('#state').select2();
+
         </script>
 
     </body>
