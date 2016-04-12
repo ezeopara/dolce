@@ -30,7 +30,7 @@
         <![endif]-->
         <style>
             body {
-                background: url(../image/DSC_0741.JPG) fixed;
+                background: url(../image/DSC_0741.jpg) fixed;
                 background-size:1600px 1063px;
                 background-repeat: no-repeat;
 

@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{action('RegisterController@index')}}" ><img src='{{ asset('image/logo1.png')}}'  /></a>
+                    <a class="navbar-brand hidden-sm hidden-xs" href="{{action('RegisterController@index')}}" ><img src='{{ asset('image/logo1.png')}}'  /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
