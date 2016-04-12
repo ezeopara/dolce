@@ -191,22 +191,22 @@
                     <h2 class="page-header">Latest MBGA Photographs</h2>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
+                    <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
+                    <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0198.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
+                    <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0326.JPG')}}" alt="">
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
+<!--                <div class="col-md-4 col-sm-6">
+                    <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0346.JPG')}}" alt="">
                     </a>
                 </div>
@@ -216,25 +216,25 @@
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
+                    <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1210.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
+                    <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1298.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
+                    <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1706.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.JPG')}}" alt="">
+                    <a href="#">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0326.JPG')}}" alt="">
                     </a>
-                </div>
+                </div>-->
             </div>
             <!-- /.row -->
 
