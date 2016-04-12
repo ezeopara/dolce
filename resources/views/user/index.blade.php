@@ -31,7 +31,7 @@
 
     </head>
 
-    <body class="body-colour" style="background-image:url('{{ asset('image/bg4.jpg')}}')">
+    <body>
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -98,26 +98,26 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner height-line">
                     <div class="item active">
-                        <div class="fill" style="background-image:url('{{ asset('image/DSC_2100.jpg')}}');">                     
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_2100.JPG')}}');">                     
                         </div>
                         <div class="carousel-caption">
                            
                         </div>
                     </div>
                     <div class="item">
-                        <div class="fill" style="background-image:url('{{ asset('image/DSC_1223.jpg')}}');"></div>
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_1223.JPG')}}');"></div>
                         <div class="carousel-caption">
                             
                         </div>
                     </div>
                     <div class="item">
-                        <div class="fill" style="background-image:url('{{ asset('image/DSC_0214.jpg')}}');"></div>
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_0214.JPG')}}');"></div>
                         <div class="carousel-caption">
                             
                         </div>
                     </div>
                     <div class="item">
-                        <div class="fill" style="background-image:url('{{ asset('image/DSC_0142.jpg')}}');"></div>
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_0142.JPG')}}');"></div>
                         <div class="carousel-caption">
                             
                         </div>
@@ -192,47 +192,47 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0198.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0198.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0326.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0326.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0346.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0346.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1204.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1204.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1210.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1210.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1298.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1298.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1706.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_1706.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.jpg')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.JPG')}}" alt="">
                     </a>
                 </div>
             </div>
@@ -257,7 +257,7 @@
                     <p>This automatically qualifies you to be screened in august; the winner represents nigeria at the all africa beauty pageant so is natiowide... so be one of the lucky contestants for the 2016 mbga grand finale october 29th   @transcorp hilton abuja nigeria. </p>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" src="{{ asset('image/DSC_1722.jpg')}}" alt="">
+                    <img class="img-responsive" src="{{ asset('image/DSC_1722.JPG')}}" alt="">
                 </div>
             </div>
             <!-- /.row -->

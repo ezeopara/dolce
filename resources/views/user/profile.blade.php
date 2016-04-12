@@ -31,10 +31,19 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+               <style>
+            body {
+                background: url(../image/DSC_0326.JPG) fixed;
+                background-size:1600px 1063px;
+                background-repeat: no-repeat;
+
+            }
+        </style>
+
 
     </head>
 
-    <body class="body-colour" style="background-image:url('{{ asset('image/bg4.jpg')}}');">
+    <body>
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
