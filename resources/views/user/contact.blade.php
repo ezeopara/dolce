@@ -6,8 +6,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+         <meta name="description" content="Dolce Entertainment-The Most Beautiful Girl in Abuja">
+        <meta name="author" content="Dolce Entertainment">
+        <meta name="robots" content="index/follow">
+        <meta name="keyword" content="MBGA 2014,MBGA 2015,MBGA 2016,peagent,dolce,Entertainment">
 
         <title>{{$title}}</title>
 
@@ -30,9 +32,8 @@
         <![endif]-->
         <style>
             body {
-                background: url(../image/DSC_1126.JPG) fixed;
-                background-size:1600px 1063px;
-                background-repeat: no-repeat;
+                background: url(../image/DSC_1126.JPG) no-repeat center fixed;
+                background-size: cover;
 
             }
         </style>
@@ -103,7 +104,7 @@
                         <small></small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a>
+                        <li><a href="{{action('RegisterController@index')}}">Home</a>
                         </li>
                         <li class="active">Contact</li>
                     </ol>
