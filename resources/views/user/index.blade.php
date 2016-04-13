@@ -197,7 +197,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="#">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0662.JPG')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0662.jpg')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
