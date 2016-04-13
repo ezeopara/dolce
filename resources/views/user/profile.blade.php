@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
     <head>
@@ -126,9 +127,10 @@
                     @include('errors.error')
                     @include('include.message')
                     @include('include.warning')
-                    @if( ! Session::has('message'))
+
                 </div>
             </div>
+
             <br />
             <div class="row">
                 {!! Form::open(['method' => 'POST', 'action'=> ['RegisterController@profileUpdate']]) !!}
@@ -375,7 +377,7 @@
                 </div><!----- end of second part of the form--->
                 {!! Form::close()!!}
             </div><!--- End of second row -->
-            @endif
+
             <hr>
 
             <!-- Footer -->

@@ -173,8 +173,8 @@ class RegisterController extends Controller {
             //updating the image table about the image update
             $register->update($request->all());
             
-            Session::flash('message', 'You have sucefully updated your record');
-            return redirect('/register/profile');
+            Session::flash('message', 'You have succefully updated your record');
+            return redirect('/register/success');
         } else {
             return redirect('/');
         }
