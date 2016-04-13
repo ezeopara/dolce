@@ -68,6 +68,9 @@
                             <a href="{{action('RegisterController@contact')}}">Contact</a>
                         </li>
                         <li>
+                            <a href="{{action('RegisterController@gallery')}}">Gallery</a>
+                        </li>
+                        <li>
                             <?php if (Session::get('key')): ?>
                             <li>
                                 <a href="{{action('RegisterController@create')}}">Form</a>

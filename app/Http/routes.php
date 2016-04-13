@@ -22,6 +22,7 @@ Route::get('register/logout', 'RegisterController@logout');
 Route::get('register/profile','RegisterController@profile');
 Route::post('register/profile','RegisterController@profileUpdate');
 Route::get('register/success','RegisterController@success');
+Route::get('register/gallery','RegisterController@gallery');
 
 //Backend route
 Route::resource('/user','UserController');

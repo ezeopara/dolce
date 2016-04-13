@@ -61,6 +61,9 @@
                         <li>
                             <a href="{{action('RegisterController@contact')}}">Contact</a>
                         </li>
+                         <li>
+                            <a href="{{action('RegisterController@gallery')}}">Gallery</a>
+                        </li>
                         <?php if (Session::get('key')): ?>
                             <li>
                                 <a href="{{action('RegisterController@create')}}">Form</a>
@@ -113,7 +116,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="fill" style="background-image:url('{{ asset('image/DSC_0214.JPG')}}');"></div>
+                        <div class="fill" style="background-image:url('{{ asset('image/DSC_0741.jpg')}}');"></div>
                         <div class="carousel-caption">
                             
                         </div>
@@ -194,7 +197,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="#">
-                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0214.JPG')}}" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0662.JPG')}}" alt="">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
@@ -207,6 +210,7 @@
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0326.JPG')}}" alt="">
                     </a>
                 </div>
+                
 <!--                <div class="col-md-4 col-sm-6">
                     <a href="#">
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0346.JPG')}}" alt="">
@@ -237,6 +241,11 @@
                         <img class="img-responsive img-portfolio img-hover" src="{{ asset('image/DSC_0326.JPG')}}" alt="">
                     </a>
                 </div>-->
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="{{action('RegisterController@gallery')}}" class="btn btn-default">View More</a>
+                </div>
             </div>
             <!-- /.row -->
 

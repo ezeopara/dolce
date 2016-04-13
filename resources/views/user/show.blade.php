@@ -70,6 +70,9 @@
                             <a href="{{action('RegisterController@contact')}}">Contact</a>
                         </li>
                         <li>
+                            <a href="{{action('RegisterController@gallery')}}">Gallery</a>
+                        </li>
+                        <li>
                          <?php if(Session::get('key')):?>
                             <li>
                             <a href="{{action('RegisterController@create')}}">Form</a>
@@ -123,7 +126,7 @@
         <div class="row">
     <div class="col-md-6 col-md-offset-3">
                 <div class="panel panel-default">
-            <div class="panel-heading">Enter reference number</div>
+            <div class="panel-heading">Enter Bank Payment reference</div>
             <div class="panel-body">
                @include('include.message')
                 @include('include.warning')

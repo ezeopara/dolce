@@ -240,5 +240,13 @@ class RegisterController extends Controller {
             return redirect('/');
         }
     }
+    
+    /*
+     * gallery page
+     */
+    public function gallery(){
+        $title = 'Gallery page';
+        return view('user.gallery',  compact('title'));
+    }
 
 }
