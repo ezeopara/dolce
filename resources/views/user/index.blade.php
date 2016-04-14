@@ -158,15 +158,11 @@
                             <div class="col-md-4">
                                 ‎<p>The MBGA is a beauty pageant organized annually by Dolce Entertainment Limited in the Federal Capital of Abuja. The pageant has been in existence for over Fifteen (15) years and has gained good reputation throughout the federation.</p>
 
-                                ‎<p>This year’s edition shall be the 16th  and promises to be the most glamorous one of all.</p>
-
-                                ‎<p>The objective of the pageant is to produce world class pageant and models who shall be the ambassadors of our great country Nigeria outside the shores of this country.</p> 
-
-
+                                ‎<p>This year’s edition shall be the 16th  and promises to be the most glamorous one of all. The objective of the pageant is to produce world class pageant and models who shall be the ambassadors of our great country Nigeria outside the shores of this country. Indeed  the  show  has  produced  many  of  such
 
                             </div>
                             <div class="col-md-4">
-                                ‎<p>Indeed  the  show  has  produced  many  of  such  models  and  some  of  our previous winners/contestants have made stunning appearances at other pageants within and outside Nigeria.</p>
+                                ‎  models  and  some  of  our previous winners/contestants have made stunning appearances at other pageants within and outside Nigeria.</p>
 
                                 ‎<p>From the inception of the pageant to date, we have received collaboration and sponsorship from various corporate bodies including ERCAS INTEGRATED SOLUTIONS LIMITED, the Nigerian Breweries Plc (AMSTEL MALTA), CHIMA MOVIE EMPIRE U.S.A, Visafone,  Nafdac,  DAAR  Communications  Owners  of  AIT/Ray  Power
                                     100.5FM, NTA Plus, AM Express, ITV, DBN Television, Hot FM, Cool FM, Gem Electronic </p>

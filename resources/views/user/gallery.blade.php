@@ -306,16 +306,16 @@ jQuery(document).ready(function ($) {
                             <img data-u="thumb" src="{{ asset('image/DSC_0142.JPG')}}" />
                         </div>
                         <div data-p="150.00" style="display: none;">
-                            <img data-u="image" src="{{ asset('image/DSC_0148.JPG')}}" />
-                            <img data-u="thumb" src="{{ asset('image/DSC_0148.JPG')}}" />
+                            <img data-u="image" src="{{ asset('image/DSC_1706.JPG')}}" />
+                            <img data-u="thumb" src="{{ asset('image/DSC_1706.JPG')}}" />
                         </div>
                         <div data-p="150.00" style="display: none;">
                             <img data-u="image" src="{{ asset('image/DSC_0198.JPG')}}" />
                             <img data-u="thumb" src="{{ asset('image/DSC_0198.JPG')}}" />
                         </div>
                         <div data-p="150.00" style="display: none;">
-                            <img data-u="image" src="{{ asset('image/DSC_0214.JPG')}}" />
-                            <img data-u="thumb" src="{{ asset('image/DSC_0214.JPG')}}" />
+                            <img data-u="image" src="{{ asset('image/DSC_1298.JPG')}}" />
+                            <img data-u="thumb" src="{{ asset('image/DSC_1298.JPG')}}" />
                         </div>
                         <div data-p="150.00" style="display: none;">
                             <img data-u="image" src="{{ asset('image/DSC_0326.JPG')}}" />

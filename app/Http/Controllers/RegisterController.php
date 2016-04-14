@@ -22,7 +22,7 @@ class RegisterController extends Controller {
      */
     public function index() {
         //
-        $title = 'Homepage';
+        $title = 'Most Beautiful Girl in Nigeria 2016';
         return view('user.index', compact('title'));
     }
 
