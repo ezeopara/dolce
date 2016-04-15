@@ -146,7 +146,7 @@
                         Transcorp Hilton, Abuja Sheraton Hotel & Towers, Sandralia Hotel, Top
                         Rank Hotel Galaxy, 3J’s Hotel, Chida Hotels, Febson Hotel, Nicon Luxury, Nanet Suites, Studio 24, Mattson Creatives Studio, VODI Tailors, Shola
                         Creative   Studio,   Bnatural,   Dreswel   Ventures   Limited,   I’AM,   Doxa, Eat.Com, Drumstix, Tetrazzini Foods Limited, Aqua Nite Club, Basement Nite Club, Cubana Lounge, Kryxtal Lounge, Denis Hotels, Agura Hotel,
-                        Chancellery Suites etc.
+                        Chancellery Suites,Randekhi Gold Hotel Benin, Lona Global Resource,Faereen Designs, Option A Media, Gabriel Oyibode Foundation, Empress Njanmah Foundation, etc.
                     </p>
 
                     <p><strong>MISSION:</strong> We are created to promote the great image of our country

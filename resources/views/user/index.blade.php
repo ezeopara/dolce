@@ -178,7 +178,7 @@
                             <div class="col-md-4">
                                 ‎  models  and  some  of  our previous winners/contestants have made stunning appearances at other pageants within and outside Nigeria.</p>
 
-                                ‎<p>From the inception of the pageant to date, we have received collaboration and sponsorship from various corporate bodies including ERCAS INTEGRATED SOLUTIONS LIMITED, the Nigerian Breweries Plc (AMSTEL MALTA), CHIMA MOVIE EMPIRE U.S.A, Visafone,  Nafdac,  DAAR  Communications  Owners  of  AIT/Ray  Power
+                            ‎<p>From the inception of the pageant to date, we have received collaboration and sponsorship from various corporate bodies including <strong>ERCAS INTEGRATED SOLUTIONS LIMITED</strong>, the Nigerian Breweries Plc (AMSTEL MALTA), CHIMA MOVIE EMPIRE U.S.A, Visafone,  Nafdac,  DAAR  Communications  Owners  of  AIT/Ray  Power
                                     100.5FM, NTA Plus, AM Express, ITV, DBN Television, Hot FM, Cool FM, Gem Electronic </p>
 
                                 ‎
@@ -188,7 +188,7 @@
                                     Transcorp Hilton, Abuja Sheraton Hotel & Towers, Sandralia Hotel, Top
                                     Rank Hotel Galaxy, 3J’s Hotel, Chida Hotels, Febson Hotel, Nicon Luxury, Nanet Suites, Studio 24, Mattson Creatives Studio, VODI Tailors, Shola
                                     Creative   Studio,   Bnatural,   Dreswel   Ventures   Limited,   I’AM,   Doxa, Eat.Com, Drumstix, Tetrazzini Foods Limited, Aqua Nite Club, Basement Nite Club, Cubana Lounge, Kryxtal Lounge, Denis Hotels, Agura Hotel,
-                                    Chancellery Suites etc.
+                                    Chancellery Suites, Randekhi Gold Hotel Benin, Lona Global Resource,Faereen Designs, Option A Media, Gabriel Oyibode Foundation, Empress Njanmah Foundation, etc.
                                 </p>
                                 <a href="{{action('RegisterController@about')}}" class="btn btn-default">Learn More</a>
                             </div>
