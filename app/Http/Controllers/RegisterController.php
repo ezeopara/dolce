@@ -248,5 +248,12 @@ class RegisterController extends Controller {
         $title = 'Gallery page';
         return view('user.gallery',  compact('title'));
     }
+    /*
+     * Display mbga Nigeria page
+     */
+    public function mbga(){
+        $title = 'MBGA Nigeria';
+        return view('user.mbga',  compact('title'));
+    }
 
 }

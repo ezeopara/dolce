@@ -23,6 +23,7 @@ Route::get('register/profile','RegisterController@profile');
 Route::post('register/profile','RegisterController@profileUpdate');
 Route::get('register/success','RegisterController@success');
 Route::get('register/gallery','RegisterController@gallery');
+Route::get('register/mbga','RegisterController@mbga');
 
 //Backend route
 Route::resource('/user','UserController');
