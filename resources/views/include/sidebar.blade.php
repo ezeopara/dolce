@@ -10,7 +10,7 @@
               <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>{{Auth::User()->name}}</p>
+              <p>{{ucwords(Auth::User()->name)}}</p>
               <!-- Status -->
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -49,7 +49,7 @@
               </ul>
             </li>
             @endif
-
+             <li class="active"><a href="{{action('AdminController@logout')}}"><i class="fa fa-link"></i> <span>Signout</span></a></li>
           </ul><!-- /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->

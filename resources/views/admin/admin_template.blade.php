@@ -114,7 +114,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <!-- The user image in the navbar-->
                  
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                  <span class="hidden-xs">{{Auth::User()->name}}</span>
+                  <span class="hidden-xs">{{ucwords(Auth::User()->name)}}</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- The user image in the menu -->
