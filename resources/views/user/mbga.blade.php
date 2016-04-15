@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <meta name="description" content="Dolce Entertainment-The Most Beautiful Girl in Abuja">
+        <meta name="description" content="Dolce Entertainment-The Most Beautiful Girl in Abuja">
         <meta name="author" content="Dolce Entertainment">
         <meta name="robots" content="index/follow">
         <meta name="keyword" content="MBGA 2014,MBGA 2015,MBGA 2016,peagent,dolce,Entertainment">
@@ -42,15 +42,22 @@
 
     <body>
         <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-76469133-1', 'auto');
-  ga('send', 'pageview');
+            ga('create', 'UA-76469133-1', 'auto');
+            ga('send', 'pageview');
 
-</script>
+        </script>
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -97,10 +104,13 @@
                             <li>
                                 <a href="{{action('RegisterController@show')}}">Register</a>
                             </li>
+                             <li>
+                                <img src='{{ asset('image/logo.png')}}'  />
+                            </li>
                         <?php endif; ?>
-                        <li>
-                            <img src='{{ asset('image/logo.png')}}'  />
-                        </li>
+                           
+                       
+
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -135,9 +145,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>MBGA Nigeria organised by Dolce Entertainment limited inlaws to extend the scope of the beauty peagent to the 
-                    national level </p>
+                        national level </p>
                     <p>We would carry out the peagent screening nation wide going from state to state achieving for finalist, providing a wider audience to
-                    infinding Models and beauty Queens.</p>
+                        infinding Models and beauty Queens.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -160,7 +170,7 @@
         </div>
         <!-- /.container -->
 
-         <!-- jQuery -->
+        <!-- jQuery -->
         <script src="{{ asset('js/jquery.js')}}"></script>
 
         <!-- Bootstrap Core JavaScript -->

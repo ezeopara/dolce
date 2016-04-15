@@ -100,10 +100,11 @@
                             <li>
                                 <a href="{{action('RegisterController@show')}}">Register</a>
                             </li>
-                        <?php endif; ?>
-                        <li>
+                            <li>
                             <img src='{{ asset('image/logo.png')}}'  />
                         </li>
+                        <?php endif; ?>
+                        
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
