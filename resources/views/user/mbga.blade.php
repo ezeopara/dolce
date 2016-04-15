@@ -144,10 +144,8 @@
             <!-- Team Members -->
             <div class="row">
                 <div class="col-md-12">
-                    <p>MBGA Nigeria organised by Dolce Entertainment limited inlaws to extend the scope of the beauty peagent to the 
-                        national level </p>
-                    <p>We would carry out the peagent screening nation wide going from state to state achieving for finalist, providing a wider audience to
-                        infinding Models and beauty Queens.</p>
+                    <p>MBGA Nigeria organized by Dolce Entertainment Limited intends to extend the scope of its beauty pageant to the National Level. </p>
+                    <p>We would carry out the pageant screening Nationwide, going from State to State, auditioning for finalists, providing a wider audience to intending Models and Beauty Queens.</p>
                 </div>
             </div>
             <!-- /.row -->
