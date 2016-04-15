@@ -19,17 +19,20 @@
                 <th>Surname</th>
                 <th>First Name</th>
                 <th>State of Origin</th>
+                <th>Phone</th>
                 <th>Contact Address</th>
                 <th>View More</th>
             </tr>
             @foreach($users as $user)
             <tr>
                 <td>{{$i}}</td>
-                <td>{{$user->surname}}</td>
-                <td>{{$user->first_name}}</td>
-                <td>{{$user->state_of_birth}}</td>
-                <td>{{$user->contact_address}}</td>
-                <td><a href="{{action('AdminController@show',['id'=>$user->id])}}">view</a></td>
+                <td>{{ucwords($user->surname)}}</td>
+                <td>{{ucwords($user->first_name)}}</td>
+                <td>{{ucwords($user->state_of_birth)}}</td>
+                <td>{{$user->contact_phone}}</td>
+                <td>{{ucwords($user->contact_address)}}</td>
+                <td> <a class="btn btn-primary" href="{{action('AdminController@show',['id'=>$user->id])}}">View <i class="fa fa-sign-in"></i></a></td>
+           
             </tr>
             <?php $i++; ?>
             @endforeach

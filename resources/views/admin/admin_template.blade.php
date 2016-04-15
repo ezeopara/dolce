@@ -177,7 +177,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           Anything you want
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2015 <a href="#">Naizon</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; <a href="#">Dolce Entertainment 2016</a>.</strong> All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->
